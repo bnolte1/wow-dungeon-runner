@@ -1,32 +1,37 @@
 /* style.css */
 body {
+    margin: 0;
     font-family: 'Georgia', serif;
     background: url('https://images.unsplash.com/photo-1601758123927-1961c6c8e3f3?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
     background-size: cover;
     color: #EDE944;
     text-align: center;
     padding: 2rem;
-    margin: 0;
   }
   
   h1 {
+    font-size: 3rem;
     color: #CD650E;
-    text-shadow: 1px 1px 2px #000;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 2rem;
   }
   
   img {
     max-width: 300px;
-    border: 3px solid #00437A;
+    border: 4px solid #00437A;
     border-radius: 12px;
-    box-shadow: 0 0 10px #0787AC;
+    box-shadow: 0 0 15px #0787AC;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .card-container {
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #EDE944;
+  }
+  
+  .deck-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
