@@ -1,37 +1,99 @@
-/* style.css */
 body {
     margin: 0;
     font-family: 'Georgia', serif;
-    background: url('https://images.unsplash.com/photo-1601758123927-1961c6c8e3f3?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #000;
     color: #EDE944;
-    text-align: center;
-    padding: 2rem;
   }
   
-  h1 {
-    font-size: 3rem;
-    color: #CD650E;
-    text-shadow: 2px 2px 4px #000;
-    margin-bottom: 2rem;
+  .layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 3rem;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .column.left {
+    width: 220px;
+    align-items: flex-end;
+  }
+  
+  .column.right {
+    width: 220px;
+    align-items: flex-start;
+  }
+  
+  .column.center img {
+    height: 100vh;
+    width: auto;
+    object-fit: contain;
   }
   
   img {
-    max-width: 300px;
-    border: 4px solid #00437A;
+    max-width: 100%;
+    border: 3px solid #00437A;
     border-radius: 12px;
-    box-shadow: 0 0 15px #0787AC;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #0787AC;
+    transition: transform 0.3s ease;
   }
   
   img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 25px #EDE944;
   }
   
-  .deck-container {
+  h2 {
+    color: #CD650E;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .raid-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    color: #EDE944;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .raid-list li {
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    border-left: 3px solid #CD650E;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+  }
+  
+  .raid-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .raid-pair {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
+  }
+  
+  .raid-pair img {
+    width: 100px;
+    height: auto;
+    border: 3px solid #00437A;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #0787AC;
+    transition: transform 0.3s ease;
+  }
+  
+  .raid-pair img:hover {
+    transform: scale(1.05);
   }
